@@ -2,6 +2,8 @@ import React from "react";
 import "./app.css";
 import { useState } from "react";
 
+const simNao = (v) => (v == null ? "Não informado" : v ? "Sim" : "Não");
+
 function App() {
   const [cnpj, setCnpj] = useState("");
   const [currentCnpj, setCurrentCnpj] = useState(null);
@@ -41,8 +43,8 @@ function App() {
           <p>CEP: {currentCnpj.cep}</p>
           <p>Estado: {currentCnpj.uf}</p>
           <p>Município: {currentCnpj.municipio}</p>
-          <p>Simples Nacional: {currentCnpj.opcao_pelo_simples}</p>
-          <p>Microempreendedor: {currentCnpj.opcap_pelo_mei}</p>
+          <p>Simples Nacional: {simNao(currentCnpj.opcao_pelo_simples)}</p>
+          <p>Microempreendedor: {simNao(currentCnpj.opcao_pelo_mei)}</p>
         </div>
       )}
     </div>

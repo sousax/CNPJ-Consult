@@ -5,7 +5,7 @@ Consulta de CNPJ em React usando a [BrasilAPI](https://brasilapi.com.br/docs#tag
 ## Funcionalidades
 
 - Busca um CNPJ (somente números) no endpoint `https://brasilapi.com.br/api/cnpj/v1/{cnpj}`.
-- Exibe razão social, nome fantasia, endereço completo (logradouro, número, bairro, complemento, CEP, município e UF).
+- Exibe razão social, nome fantasia, endereço completo (logradouro, número, bairro, complemento, CEP, município e UF) e se a empresa é optante do Simples Nacional e MEI.
 
 ## Tecnologias
 
